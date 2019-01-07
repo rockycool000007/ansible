@@ -1,0 +1,6 @@
+---
+- name: Install Docker
+  become: yes
+  hosts: web-server
+  roles:
+    - packages/docker

@@ -1,0 +1,10 @@
+---
+- name: Install node js
+  yum:
+    name: nodejs
+    state: present
+
+- name: Install npm
+  yum:
+    name: npm
+    state: present

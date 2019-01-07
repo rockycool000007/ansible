@@ -1,2 +1,7 @@
 ---
-# tasks file for node
+- import_tasks: redhat_setup.yml
+  when: ansible_os_family == 'RedHat'
+
+- import_tasks: debian_setup.yml
+  when: ansible_os_family == 'Debian'
+
